@@ -110,6 +110,66 @@
         .phone-cta:hover {
             background: #f0f0f0;
         }
+
+        /* Mobile Menu */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    border-top: 1px solid #333;
+    z-index: 999;
+}
+
+.mobile-nav.active {
+    display: block;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+    transition: background 0.3s;
+}
+
+.mobile-nav a:hover {
+    background: #333;
+}
+
+/* Update existing responsive section */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+    }
+}
         
         /* Hero Section */
         .hero {
