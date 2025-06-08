@@ -293,7 +293,25 @@
     margin-left: auto;
     margin-right: auto;
 }
+.service-item {
+    background: white;
+    padding: 2rem;
+    border-left: 4px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
 
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h4 {
+    color: #000000;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+        
 @media (max-width: 768px) {
     .services-list {
         grid-template-columns: repeat(2, 1fr);
