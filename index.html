@@ -462,16 +462,26 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">DMV Taildragger Training</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="tel:301-888-5655" class="phone-cta">📞 (301) 888-5655</a>
-        </nav>
+    <div class="logo">DMV Taildragger Training</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+    <a href="tel:301-888-5655" class="phone-cta">📞 (301) 888-5655</a>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+    <ul>
+        <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+        <li><a href="#services" onclick="closeMobileMenu()">Services</a></li>
+        <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+        <li><a href="#pricing" onclick="closeMobileMenu()">Pricing</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+</div>
     </header>
 
     <!-- Hero Section -->
