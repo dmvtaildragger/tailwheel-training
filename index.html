@@ -631,6 +631,27 @@
 
     <!-- JavaScript for smooth interactions -->
     <script>
+       // Mobile menu functions
+function toggleMobileMenu() {
+    const mobileNav = document.getElementById('mobileNav');
+    mobileNav.classList.toggle('active');
+}
+
+function closeMobileMenu() {
+    const mobileNav = document.getElementById('mobileNav');
+    mobileNav.classList.remove('active');
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    
+    if (!mobileNav.contains(event.target) && !mobileMenuBtn.contains(event.target)) {
+        mobileNav.classList.remove('active');
+    }
+});
+        
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
