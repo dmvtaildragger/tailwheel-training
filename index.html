@@ -224,24 +224,27 @@
         }
         
         /* Services Section */
-        .services-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .service-item {
-            background: white;
-            padding: 1.5rem;
-            border-left: 4px solid #000000;
-            border-radius: 5px;
-        }
-        
-        .service-item h4 {
-            color: #000000;
-            margin-bottom: 0.5rem;
-        }
+       .services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+}
         
         /* About Section */
         .about-content {
@@ -343,7 +346,7 @@
         
         /* Footer */
         footer {
-            background: #1e3c72;
+            background: #000000;
             color: white;
             text-align: center;
             padding: 2rem 0;
